@@ -1,19 +1,20 @@
+/*DECLARANDO VARIAVEIS CONSTANTES PARAS ESSAS CORES PADRÃO*/
 :root{
     --vermelho: #e50914;
     --preta: #141414;
 }
-
+/*FORMATANDO O BODY*/
 body{
-    /*background-color: #141414;*/
+    background-color: #141414;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
-
+/*ZERANDO AS MARGENS PADRÃO DO NAVEGADOR PARA TODO DOCUMENTO*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/*FORMATANDO A CAIXA E ALINHANDO OS LINKS DA BARRA DE NAVEGAÇÃO*/
 header .container{
     padding: 15px;
     display: flex;
@@ -21,7 +22,7 @@ header .container{
     align-items: center;
     background-color: var(--preta);
 }
-
+/*FORMATANDO O TAMANHO DA LOGO NA BARRA DE NAVEGAÇÃO*/
 .logo_img{
     width: 100px;
     margin-top: 5px;
@@ -29,13 +30,24 @@ header .container{
     margin-bottom: 5px;
     margin-right: 3%;
 }
-
+/*FORMATANDO COR E MARGEM DOS LINKS NA BARRA DE NAVAGAÇÃO*/
 header nav a{
     text-decoration: none;
     color: #aaa;
     margin-right: 10px;
 }
-
+/*APLICANDO UM EFEITO DE MUDANÇA DE COR AO COLOCAR O CURSOR POR CIMA DO LINK*/
 header nav a:hover{
     color: #fff;
+}
+/*ADICIONANDO UMA FONT EXTERNA*/
+@font-face {
+    font-family: knight;
+    src: url(fonts/Supernatural_Knight.ttf);
+}
+/*UTILIZANDO E FORMATANDO FONTE AO H3 DA MAIN*/
+main h3{
+    font-family: knight;
+    font-size: 40px;
+    color: white;
 }
