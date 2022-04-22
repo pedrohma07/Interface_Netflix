@@ -5,7 +5,7 @@
 }
 /*FORMATANDO O BODY*/
 body{
-    background-color: #141414;
+    background-color: var(--preta);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 /*ZERANDO AS MARGENS PADRÃO DO NAVEGADOR PARA TODO DOCUMENTO*/
@@ -26,9 +26,11 @@ header .container{
 .logo_img{
     width: 100px;
     margin-top: 5px;
-    margin-left: 40px;
+    margin-left: 3%;
     margin-bottom: 5px;
     margin-right: 3%;
+
+    cursor: pointer;
 }
 /*FORMATANDO COR E MARGEM DOS LINKS NA BARRA DE NAVAGAÇÃO*/
 header nav a{
@@ -40,6 +42,20 @@ header nav a{
 header nav a:hover{
     color: #fff;
 }
+.filme_destaque{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url(/img/capa.png);
+
+    
+    height: 600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 /*ADICIONANDO UMA FONT EXTERNA*/
 @font-face {
     font-family: knight;
@@ -50,4 +66,41 @@ main h3{
     font-family: knight;
     font-size: 40px;
     color: white;
+}
+
+main p.descricao{
+    width: 40%;
+    margin: 5px;
+    font-family: knight;
+    font-size: 100%;
+    color: white;
+}
+
+main img.titulo{
+    max-width: 20%;
+    align-items: center;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    border-radius: 3px;
+    color: white;
+
+
+
+    padding: 10px 15px;
+    font-size: 20px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px;
 }
