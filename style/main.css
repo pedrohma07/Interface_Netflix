@@ -46,8 +46,8 @@ header nav a:hover{
     font-size: 20px;
     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url(/img/capa.png);
 
-    
-    height: 600px;
+    height: 450px;
+
     background-size: cover;
 
     display: flex;
@@ -71,9 +71,9 @@ main h3{
 
 main p.descricao{
     width: 40%;
-    margin: 5px;
+    margin: 10px;
     font-family: knight;
-    font-size: 100%;
+    font-size: 100;
     color: white;
 }
 
@@ -90,8 +90,9 @@ main img.titulo{
     border-radius: 3px;
     color: white;
 
-    padding: 10px 15px;
-    font-size: 20px;
+    padding: 1% 3%;
+    
+    font-size: 70%;
 
     cursor: pointer;
     transition: .3s ease all;
@@ -102,12 +103,14 @@ main img.titulo{
     color: black;
 }
 
-.botao i{
-    margin-right: 5px;
-}
-
-main .container{
+.filme_destaque .container{
     margin-left: 5%;
     margin-top: 60px;
+    width: 100%;
+}
 
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
 }
